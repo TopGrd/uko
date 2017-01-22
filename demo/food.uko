@@ -1,0 +1,8 @@
+<div>
+  <div>book: {{book}}</div>
+  <div>banane: {{fruit.apple}}</div>
+  <div>
+    movie:
+    <span>{{movie[2]}}</span>
+  </div>
+</div>

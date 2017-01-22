@@ -1,0 +1,4 @@
+<div>
+  hello user.
+  {{users[1].name}}
+</div>

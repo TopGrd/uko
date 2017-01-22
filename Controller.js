@@ -4,6 +4,7 @@ class Controller {
     this.model = model;
     this.all = {};
     this.model.emit = this.emit.bind(this);
+    this.init(model);
   }
 
   list(type) {
@@ -28,7 +29,7 @@ class Controller {
     });
   }
 
-  init() {
+  init(model) {
     this.on('change', e => {
       console.info('model has changed');
     });
@@ -36,7 +37,7 @@ class Controller {
       console.warn(e.name + ' has remove');
     });
     this.on('*', e => {
-      console.log(model);
+      console.log(this.model);
       console.log('view changed');
       this.view.renderContainer();
     });

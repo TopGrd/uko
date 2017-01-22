@@ -58,7 +58,7 @@ class View {
   }
 
   renderContainer() {
-    var tpl = this.checkContainer();
+    let tpl = this.checkContainer();
     this.container.innerHTML = tpl;
     _.show(this.container);
     this.bindEvents();
